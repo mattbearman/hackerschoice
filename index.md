@@ -4,4 +4,8 @@ A curated collection of products and services recommended by the fine folks at [
 
 ## Categories
 
-### Books
+{% for member in site.data.categories %}
+  <a href="/{{ member.slug }}">
+    {{ member.name }}
+  </a>
+{% endfor %}
